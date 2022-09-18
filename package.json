@@ -3,14 +3,17 @@
   "displayName": "Laravel Blade",
   "description": "",
   "version": "0.0.1",
+  "publisher": "jedymatt",
   "repository": {
     "type": "git",
     "url": "https://github.com/jedymatt/laravel-blade"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.71.0"
   },
   "categories": [
+    "Formatters",
     "Other"
   ],
   "activationEvents": [
