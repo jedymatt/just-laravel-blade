@@ -3,7 +3,7 @@
 Features
 
 - [x] Formatter: Format
-- [x] Formatter: Configurations
+- [ ] Formatter: Configurations
 - [x] Command: Create blade file
 - [ ] Quick Action: Add parent tag like how the flutter does to add parent widget
 - [ ] Quick Action: Create blade file from `view('hello.world')` or `View::render('hello.world')` when file is empty
