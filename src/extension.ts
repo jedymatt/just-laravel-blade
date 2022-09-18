@@ -10,14 +10,11 @@ const fs = require("fs");
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-  // Use the console to output diagnostic information (console.log) and errors (console.error)
-  // This line of code will only be executed once when your extension is activated
-  // console.log('Congratulations, your extension "laravel-blade" is now active!');
-  vscode.window.showInformationMessage("Laravel Blade is now active!");
+  console.log("Laravel Blade is now active!");
 
   context.subscriptions.push(
     vscode.commands.registerCommand(
-      "laravel-blade.createBladeFile",
+      "just-laravel-blade.createBladeFile",
       async () => {
         const bladeFileName = await vscode.window.showInputBox({
           prompt: "Enter blade file name using dot notation",
@@ -57,16 +54,17 @@ export function activate(context: vscode.ExtensionContext) {
         }
         const fileUri = vscode.Uri.file(fullFilePath);
 
-        await vscode.workspace.fs.writeFile(fileUri, new TextEncoder().encode(""));
+        await vscode.workspace.fs.writeFile(
+          fileUri,
+          new TextEncoder().encode("")
+        );
 
         vscode.window.showInformationMessage("File is created successfully.");
         console.log("File path: " + fullFilePath + " File URI: " + fileUri);
 
-        vscode.workspace
-          .openTextDocument(fileUri)
-          .then((doc) => {
-            vscode.window.showTextDocument(doc);
-          });
+        vscode.workspace.openTextDocument(fileUri).then((doc) => {
+          vscode.window.showTextDocument(doc);
+        });
       }
     )
   );

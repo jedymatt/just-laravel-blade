@@ -1,4 +1,4 @@
-# laravel-blade
+# just-laravel-blade
 
 Features
 
