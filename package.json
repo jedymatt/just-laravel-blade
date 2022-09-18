@@ -1,12 +1,12 @@
 {
-  "name": "laravel-blade",
+  "name": "just-laravel-blade",
   "displayName": "Laravel Blade",
   "description": "",
   "version": "0.0.1",
   "publisher": "jedymatt",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jedymatt/laravel-blade"
+    "url": "https://github.com/jedymatt/just-laravel-blade"
   },
   "license": "MIT",
   "engines": {
