@@ -22,7 +22,6 @@ export async function createBladeFileCommand() {
 
   const workspaceFsPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
 
-
   const fullFilePath = getFullFilePathForBlade(bladeFileName, workspaceFsPath);
 
   if (fs.existsSync(fullFilePath)) {
