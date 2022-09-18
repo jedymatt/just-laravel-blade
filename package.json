@@ -19,13 +19,13 @@
   "activationEvents": [
     "onLanguage:blade",
     "onLanguage:php",
-    "onCommand:laravel-blade.createBladeFile"
+    "onCommand:just-laravel-blade.createBladeFile"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "laravel-blade.createBladeFile",
+        "command": "just-laravel-blade.createBladeFile",
         "title": "Laravel Blade: Create Blade File"
       }
     ],
