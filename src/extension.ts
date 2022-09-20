@@ -78,7 +78,7 @@ export function activate(context: vscode.ExtensionContext) {
           lastLine.range.end
         );
 
-        const options = {
+        const options = <BladeFormatterConfig>{
           indentSize: 4,
           sortTailwindcssClasses: true,
           noMultipleEmptyLines: true,
